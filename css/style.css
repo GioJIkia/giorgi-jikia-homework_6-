@@ -9,21 +9,20 @@ body {
 }
 /* header */
 header {
-  padding: 53px 98px;
   background-color: #284069;
-}
-.header-container {
+  padding: 53px 98px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .header-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 50px;
 }
-.header-link {
+.active,
+.inactive {
   font-weight: 500px;
   font-style: Medium;
   font-size: 24px;
@@ -38,8 +37,8 @@ header {
 }
 /* section */
 section {
+  background-color: #ddeaf8; 
   padding: 94px 98px;
-  background-color: #ddeaf8;
 }
 .section-header {
   font-weight: 700;
@@ -57,10 +56,14 @@ section {
   gap: 30px 22px;
 }
 .article-card {
-  width: 400px;
-  padding: 30px;
   background-color: #ffffff;
   border-radius: 10px;
+  width: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 30px;
 }
 .card-image {
   width: 100%;
@@ -71,7 +74,6 @@ section {
   display: flex;
   width: 145px;
   height: 44px;
-  margin: 30px 0px 0px 195px;
 }
 button {
   width: 100%;
@@ -88,14 +90,12 @@ button {
 }
 /* footer */
 footer {
-  padding-block: 48px;
   background-color: #284069;
-}
-.footer-container {
+  padding-block: 48px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  row-gap: 24px;
 }
 .footer-header {
   font-weight: 700px;
@@ -107,7 +107,5 @@ footer {
 }
 .social-media {
   display: flex;
-  row-gap: 32px;
   column-gap: 32px;
-  margin-top: 24px;
 }
